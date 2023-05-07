@@ -1,0 +1,22 @@
+{
+  "name": "lib-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc",
+    "test": "vitest run",
+    "dev": "vitest",
+    "ci": "pnpm run lint && pnpm run test && pnpm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.0",
+    "tsup": "^6.7.0",
+    "typescript": "5.0.4",
+    "vitest": "^0.31.0"
+  },
+  "keywords": [],
+  "author": "Mohammed aljasser",
+  "license": "MIT"
+}
