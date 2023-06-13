@@ -1,0 +1,10 @@
+src/
+.git/
+
+node_modules/
+npm-shrinkwrap.json
+
+# misc
+.gitignore
+tslint.json
+npm-debug.log

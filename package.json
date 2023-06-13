@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "private": false,
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "lint": "tsc",
@@ -16,7 +18,8 @@
     "@types/node": "^18.14.0",
     "tsup": "^6.7.0",
     "typescript": "5.0.4",
-    "vitest": "^0.31.0"
+    "vitest": "^0.31.0",
+    "release": "pnpm run build && changeset publish"
   },
   "keywords": [],
   "author": "Mohammed aljasser",
