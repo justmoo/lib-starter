@@ -11,15 +11,15 @@
     "lint": "tsc",
     "test": "vitest run",
     "dev": "vitest",
-    "ci": "pnpm run lint && pnpm run test && pnpm run build"
+    "ci": "pnpm run lint && pnpm run test && pnpm run build",
+    "release": "pnpm run build && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.1",
     "@types/node": "^18.14.0",
     "tsup": "^6.7.0",
     "typescript": "5.0.4",
-    "vitest": "^0.31.0",
-    "release": "pnpm run build && changeset publish"
+    "vitest": "^0.31.0"
   },
   "keywords": [],
   "author": "Mohammed aljasser",
